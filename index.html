@@ -6,8 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Notes App</title>
-    <link rel="icon" href="/website.HTML/project.js/download (1).jfif" type="image/icon type">
+    <title>Notepad</title>
+    <link rel="icon" href="download (1).jfif" type="image/icon type">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
          <link rel="stylesheet" href="styles.css">
@@ -15,8 +15,8 @@
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <img class="logo" src="/website.HTML/download (1).jfif" alt="site logo">
-        <a class="navbar-brand" href="#">Notes app</a>
+        <img class="logo" src="download (1).jfif" alt="site logo">
+        <a class="navbar-brand" href="#">Notepad</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -25,11 +25,12 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">home<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
                 </li>
             </ul>
-            <button onclick="myFunction()" style="background-color:rgb(26, 76, 185) ; color:white;">dark mode</button>
+            <button class="dark-mode" onclick="myFunction()" style="background-color:rgb(26, 76, 185) ; color:white;">Dark Mode</button>
             <form class="form-inline my-2 my-lg-0">
+                
                 <input class="form-control mr-sm-2" id="searchTxt" type="search" placeholder="Search"
                     aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" class= "btn" type="submit">Search</button>
@@ -38,17 +39,17 @@
     </nav>
 
     <div class="container my-3">
-        <h1>Welcome To our notes app</h1>
+        <h1>Welcome To Your Notepad</h1>
         <div class="card">
             <div class="card-body">
                 <div class="form-group">
-                    <h5 class="card-title">Add title</h5>
+                    <h3 class="card-title">Title</h3>
                     <input type="text" class="form-control" id="addTitle" aria-describedby="title"
                         placeholder="Enter title">
                 </div>
-                <h5 class="card-title" >add notes</h5>
-
-                 <textarea class="form-control" id="addTxt" rows="3"></textarea>
+                <h3 class="card-title" >Body</h3>
+                            
+                 <textarea class="form-control" id="addTxt" rows="3" placeholder="Start Writing......."></textarea>
                 </div>
                 <button class="btn btn-primary" id="addBtn" width="50pt">Add Note</button>
                 
